@@ -763,7 +763,7 @@ body {
   top: 15px;
   left: -29px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,6 +834,12 @@ body {
   background: linear-gradient(to right, #ffffff, #ffffff 30%, transparent), url(../img/section-5/Ellipse2.svg);
 }
 
+.management__grafik .sprite {
+  -webkit-transform: translateX(60px);
+      -ms-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
 .management__span {
   position: absolute;
   display: -webkit-box;
@@ -852,7 +858,7 @@ body {
   height: 35px;
   left: -55px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,7 +969,11 @@ body {
 }
 
 .developments-item__img {
-  max-width: 323px;
+  max-width: 100%;
+}
+
+.developments-item__img img {
+  width: 100%;
 }
 
 .developments-item__span {
@@ -1318,5 +1328,199 @@ body {
   .responsibly-right__items {
     max-width: 270px;
     grid-gap: 25px 35px;
+  }
+
+  .management {
+    padding: 31px 0 72px 0;
+    background: url(../img/section-5/Vector2.png) no-repeat -120% 0%;
+    background-size: 90%;
+  }
+
+  .management__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .management__img {
+    max-width: 81px;
+    margin-bottom: 22px;
+  }
+
+  .management__title-2 {
+    max-width: 200px;
+  }
+
+  .management__left {
+    margin-bottom: 55px;
+  }
+
+  .management__item {
+    padding: 20px 20px 15px 20px;
+  }
+
+  .management__item::before {
+    width: 35px;
+    height: 35px;
+    top: -18px;
+    left: 7px;
+    font-size: .875rem;
+    border: 5px solid #ffffff;
+  }
+
+  .management__label {
+    font-size: 1rem;
+  }
+
+  .management__text {
+    font-size: 0.75rem;
+    margin-top: 12px;
+  }
+
+  .management__right {
+    padding: 0;
+  }
+
+  .management__grafik {
+    width: 315px;
+    height: 315px;
+    -webkit-transform: translateX(-60%);
+        -ms-transform: translateX(-60%);
+            transform: translateX(-60%);
+    background: url(../img/section-5/Ellipse2.svg);
+    background-size: 100%;
+  }
+
+  .management__span {
+    font-size: .875rem;
+    max-width: 120px;
+  }
+
+  .management__span::before {
+    width: 28px;
+    height: 28px;
+    font-size: 0.875rem;
+  }
+
+  .management__span_1 {
+    top: 7%;
+    right: -33%;
+  }
+
+  .management__span_2 {
+    top: 32%;
+    right: -34%;
+  }
+
+  .management__span_3 {
+    top: 62%;
+    right: -47%;
+  }
+
+  .management__span_4 {
+    top: 82%;
+    right: -33%;
+  }
+
+  .developments {
+    padding: 49px 0 41px 0;
+  }
+
+  .developments__arrows {
+    display: none;
+  }
+
+  .developments-items {
+    overflow: auto;
+  }
+
+  .developments-item {
+    min-width: 270px;
+  }
+
+  .developments-item__span {
+    font-size: 0.625rem;
+  }
+
+  .developments-item__bottom {
+    padding: 24px 48px 26px 19px;
+  }
+
+  .developments-item__text-top {
+    max-width: 180px;
+    font-size: 0.875rem;
+    margin-bottom: 18px;
+    line-height: 1.214;
+  }
+
+  .developments-item__text-bottom {
+    font-size: 0.75rem;
+    line-height: 1.416;
+    margin-bottom: 0;
+  }
+
+  .discuss {
+    padding: 48px 0 45px 0;
+  }
+
+  .discuss__title-2 {
+    max-width: 260px;
+    line-height: 1;
+    margin: 0 auto 20px auto;
+  }
+
+  .tabs__steps {
+    margin-bottom: 25px;
+  }
+
+  .tabs__titles {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 10px 6px 10px;
+    margin-bottom: 20px;
+  }
+
+  .tabs__title-3:not(:last-of-type) {
+    margin-right: 25px;
+  }
+
+  .tabs-items__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tabs-items__circle {
+    -webkit-transform: scale(0.58);
+        -ms-transform: scale(0.58);
+            transform: scale(0.58);
+    margin-bottom: -20px;
+  }
+
+  .tabs-items__text {
+    font-size: 0.6875rem;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1.5;
+  }
+
+  .footer__row p:first-of-type,
+  .footer__row p:nth-of-type(3),
+  .footer__row p:nth-of-type(4) {
+    margin-bottom: 33px;
   }
 }
