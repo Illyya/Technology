@@ -1189,6 +1189,10 @@ body {
   .header__media {
     display: none;
   }
+
+  .header__media-video {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
