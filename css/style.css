@@ -267,6 +267,9 @@ body {
   min-height: 100vh;
   padding: 200px 0;
   color: white;
+  background: url(../img/header/background-header.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .header__media {
@@ -275,7 +278,6 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #666666;
   overflow: hidden;
 }
 
@@ -1198,6 +1200,10 @@ body {
 
   .header {
     padding: 133px 0 86px 0;
+  }
+
+  .header__media {
+    display: none;
   }
 
   .left-text {
