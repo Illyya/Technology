@@ -267,7 +267,7 @@ body {
   min-height: 100vh;
   padding: 200px 0;
   color: white;
-  background: url(../img/header/background-header.jpg) no-repeat;
+  background: url(../img/header/background-header.webp) no-repeat;
   background-position: center;
   background-size: cover;
 }
