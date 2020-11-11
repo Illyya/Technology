@@ -38,12 +38,7 @@
                 <li class="menu__item"><a href="#">События</a></li>
                 <li class="menu__item"><a href="#" class="top__btn btn">Обсудить проект</a></li>
             </ul>
-        </nav>
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        </nav>        
     </div>
     <div class="header__left-text left-text">
         <p>Технологии  и  опыт</p>
@@ -78,21 +73,27 @@
 							<swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
 								<swiper-slide class="slide-1">
 									<div class="slider-top__col slider-top__col_1">
-										<div class="sprite sprite-Group-10"></div>
+										<svg class="icon">
+											<use xlink:href="img/sprites/sprite.svg#Group 10" ></use>
+										</svg>
 										<p class="slider-top__text">IoT / M2M</p>
 										<p class="slider-top__text">Интернет вещей и межмашинное взаимодействие</p>
 									</div>
 								</swiper-slide>
 								<swiper-slide class="slide-2">
 									<div class="slider-top__col slider-top__col_2">
-										<div class="sprite sprite-Group-6-1"></div>
+										<svg class="icon">
+											<use xlink:href="img/sprites/sprite.svg#Group 6.1" ></use>
+										</svg>
 										<p class="slider-top__text">ML/AI</p>
 										<p class="slider-top__text">Искуственный интеллект и машинное обучение</p>
 									</div>
 								</swiper-slide>
 								<swiper-slide class="slide-3">
 									<div class="slider-top__col slider-top__col_3">
-										<div class="sprite sprite-Group-3-2"></div>
+										<svg class="icon">
+											<use xlink:href="img/sprites/sprite.svg#Group 3.2" ></use>
+										</svg>
 										<p class="slider-top__text">Cloud computing, VDI</p>
 										<p class="slider-top__text">Виртуализация вычислительных ресурсов, систем
 											хранения данных и рабочих мест</p>
@@ -100,7 +101,9 @@
 								</swiper-slide>
 								<swiper-slide class="slide-4">
 									<div class="slider-top__col slider-top__col_4">
-										<div class="sprite sprite-Vector"></div>
+										<svg class="icon">
+											<use xlink:href="img/sprites/sprite.svg#Vector" ></use>
+										</svg>
 										<p class="slider-top__text">Edge computing</p>
 										<p class="slider-top__text">Организация вычислений/обработки данных на “границе
 											сети”</p>
@@ -226,7 +229,7 @@
 			</div>
 			<div class="advanced__right">
 				<figure class="advanced__img">					
-					<svg class="advanced__svg" width="1025" height="744" viewBox="0 0 1025 744" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg class="advanced__svg" width="1025" height="744" viewBox="0 0 1025 744"  xmlns="http://www.w3.org/2000/svg">
 						<g clip-path="url(#clip0)">
 						<path d="M360.399 3.69886C360.399 5.46586 358.968 6.89773 357.203 6.89773C355.438 6.89773 354.006 5.46586 354.006 3.69886C354.006 1.93187 355.438 0.5 357.203 0.5C358.968 0.5 360.399 1.93187 360.399 3.69886Z" stroke="#AFAFAF"/>
 						<path d="M383.96 3.69886C383.96 5.46586 382.529 6.89773 380.764 6.89773C378.999 6.89773 377.568 5.46586 377.568 3.69886C377.568 1.93187 378.999 0.5 380.764 0.5C382.529 0.5 383.96 1.93187 383.96 3.69886Z" stroke="#AFAFAF"/>
@@ -1398,7 +1401,7 @@
         </div>
     </div>
 </footer>
-	</div>
+	</div>	
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@5.3.6/js/swiper.min.js"></script>	
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>	

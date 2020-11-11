@@ -4,12 +4,9 @@ new Vue({
     el: '#vueapp',
     data() {
         return {
-            tabs1: true,
-            tabs2: false,
-            tabs3: false,
             swiperOptionTop: {
                 loop: true,
-                loopedSlides: 5, 
+                loopedSlides: 5,
                 spaceBetween: 10,
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -18,7 +15,7 @@ new Vue({
             },
             swiperOptionThumbs: {
                 loop: true,
-                loopedSlides: 5, 
+                loopedSlides: 5,
                 spaceBetween: 10,
                 centeredSlides: true,
                 slidesPerView: 'auto',

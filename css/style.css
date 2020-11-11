@@ -346,30 +346,13 @@ body {
   color: #FF3047;
   background-color: #FFFFFF;
   border-radius: 5px;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
-.burger {
-  display: none;
-}
-
-.burger span {
-  content: '';
-  display: table;
-  width: 20px;
-  height: 2px;
-  background-color: #ffffff;
-  margin-bottom: 3px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.burger.active span:nth-of-type(2) {
-  width: 70%;
-}
-
-.burger.active span:nth-of-type(3) {
-  width: 40%;
+.top__btn:hover {
+  background-color: #e6e6e6;
 }
 
 .logo__img {
@@ -381,6 +364,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu__item {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.menu__item:not(:last-of-type)::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  border-radius: 5px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #C91226;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.menu__item:hover::before {
+  width: 50%;
 }
 
 .menu__item:not(:last-of-type) {
@@ -432,6 +442,13 @@ body {
   border-radius: 5px;
   background: #FF2A42;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.description__btn:hover {
+  background-color: #f6001c;
 }
 
 .description__btn::before {
@@ -559,6 +576,13 @@ body {
   margin-bottom: 25px;
 }
 
+.icon {
+  width: 50px;
+  height: 50px;
+  fill: #AFAFAF;
+  stroke: #AFAFAF;
+}
+
 .thumb-example {
   background-color: #ffffff;
 }
@@ -584,9 +608,18 @@ body {
   height: 100%;
 }
 
+.swiper.gallery-thumbs .swiper-slide .icon {
+  margin-bottom: 25px;
+}
+
 .swiper.gallery-thumbs .swiper-slide-active .slider-top__text {
   color: #C91226;
   opacity: 1;
+}
+
+.swiper.gallery-thumbs .swiper-slide-active .icon {
+  fill: #C91226;
+  stroke: #C91226;
 }
 
 .advanced {
@@ -610,12 +643,12 @@ body {
 }
 
 .advanced__svg {
-  -webkit-animation: svg 5s infinite;
-          animation: svg 5s infinite;
+  animation: svg 5s infinite alternate-reverse;
 }
 
 @-webkit-keyframes svg {
   100% {
+    stroke-width: 0;
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
   }
@@ -623,6 +656,7 @@ body {
 
 @keyframes svg {
   100% {
+    stroke-width: 0;
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
   }
@@ -1166,10 +1200,6 @@ body {
 }
 
 @media (max-width: 1055px) {
-  .burger {
-    display: block;
-  }
-
   .menu {
     display: none;
   }
