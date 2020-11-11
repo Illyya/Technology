@@ -384,13 +384,13 @@ body {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #C91226;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .menu__item:hover::before {
-  width: 50%;
+  width: 70%;
 }
 
 .menu__item:not(:last-of-type) {
